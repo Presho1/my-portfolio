@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -81,7 +83,11 @@ li{
 }
 
 .text--purple{
-    color:#cc8ecc 
+    color:#cc8ecc; 
+    font-family: 'Montserrat', sans-serif;
+}
+.text-purple{
+    color:#cc8ecc; 
 }
 
 section:nth-child(even){
@@ -90,6 +96,7 @@ section:nth-child(even){
 
 .section__title{
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -136,6 +143,7 @@ nav{
     color: #cc8ecc ;
     max-width: 0 12px;
     font-weight: bold;
+    flex: 1;
 }
 
 /* ABOUT ME */
@@ -166,7 +174,7 @@ nav{
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
-    margin-bottom: 28px;
+    margin: 28px;
     animation: animate-profile-picture 800ms 200ms backwards;
 }
 
@@ -501,5 +509,14 @@ footer{
     .project__description--sub-title{
         text-align: center;
         margin: 12px 0;
+    }
+}
+
+
+/* SMALLER PHONES */
+
+@media (max-width: 360px){
+    .nav__link:not(:) {
+        display: none;
     }
 }
