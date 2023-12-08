@@ -511,12 +511,3 @@ footer{
         margin: 12px 0;
     }
 }
-
-
-/* SMALLER PHONES */
-
-@media (max-width: 360px){
-    .nav__link:not(:) {
-        display: none;
-    }
-}
